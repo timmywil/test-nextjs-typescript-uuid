@@ -1,7 +1,8 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import type { NextPage } from 'next'
 import styles from '../styles/Home.module.css'
+import { v4 as uuid } from 'uuid'
 
 const Home: NextPage = () => {
   return (
@@ -18,8 +19,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          Here is a uuid: &ldquo;{uuid()}&rdquo;
         </p>
 
         <div className={styles.grid}>
